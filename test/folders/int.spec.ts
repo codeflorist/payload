@@ -166,7 +166,7 @@ describe('folders', () => {
       expect(postAfter.folder).toBeFalsy()
     })
 
-    it('deleteSubfoldersAfterDelete deletes subfolders after deleting the parent folder', async () => {
+    it('deleteSubfoldersBeforeDelete deletes subfolders after deleting the parent folder', async () => {
       const parentFolder = await payload.create({
         collection: 'payload-folders',
         data: {
